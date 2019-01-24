@@ -47,7 +47,7 @@ type ReleaseData struct {
 // ListReleases lists all releases according to provided options
 func ListReleases(o ListOptions) ([]ReleaseData, error) {
 	if o.TillerNamespace == "" {
-		o.TillerNamespace = "kube-system"
+		o.TillerNamespace = "tiller"
 	}
 	if o.TillerLabel == "" {
 		o.TillerLabel = "OWNER=TILLER"
