@@ -214,7 +214,7 @@ func GetTillerStorage(tillerNamespace string) string {
 
 	if len(pods.Items) == 0 {
 		log.Fatal(tillerNamespace)
-		log.Fatal("Found 0 tiller pods")
+		log.Fatal("Found no tiller pods")
 	}
 
 	storage := "configmaps"
